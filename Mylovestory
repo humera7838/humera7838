@@ -1,0 +1,101 @@
+- 👋 Hi, I’m @humera7838
+- 👀 I’m interested in ...you
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+humera7838/humera7838 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+---><!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk & Mocha Love Space</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFE5B4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        .love-button {
+            background-color: #FF6B81;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .love-button:hover {
+            background-color: #ff3b5a;
+        }
+        #message {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #333;
+        }
+        #shayari {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>💖 Milk & Mocha Love Space 💖</h2>
+        <p>प्यारा सरप्राइज भेजने के लिए बटन दबाएं!</p>
+        <button class="love-button" onclick="sendLove()">Send Love 💕</button>
+        <p id="message"></p>
+        <p id="shayari"></p>
+        
+        <!-- रोमांटिक गाना -->
+        <audio id="romanticSong">
+            <source src="https://www.example.com/tera-mera-hai-pyar-amar.mp3" type="audio/mp3">
+            आपका ब्राउज़र ऑडियो एलिमेंट को सपोर्ट नहीं करता।
+        </audio>
+    </div>
+
+    <script>
+        function sendLove() {
+            const messages = [
+                "💌 हाँ, मैं तुमसे बहुत प्यार करती हूँ, नदीम! 💖",
+                "🐻 मिल्क और मोचा कह रहे हैं: तुम दोनों की लव स्टोरी सबसे प्यारी है! 😍",
+                "🌙 तुम मेरी दुनिया हो, नदीम! 💫",
+                "🐾 हर दिन तुम्हारे बिना अधूरा लगता है! 😘",
+                "💘 तुम मेरी ज़िंदगी की सबसे खूबसूरत कहानी हो! 🥰"
+            ];
+            
+            const shayaris = [
+                "💕 दिल की हर धड़कन में सिर्फ तुम हो, नदीम! 💕",
+                "🌹 तुम आए तो ज़िंदगी गुलज़ार हो गई! 🌹",
+                "💖 तेरे बिना अधूरा लगता है ये दिल! 💖",
+                "🌙 चाँद भी शर्मा जाए, जब तुम मुस्कुराती हो! 🌙",
+                "🥰 तुम मेरी दुआओं का सबसे खूबसूरत जवाब हो! 🥰"
+            ];
+
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            const randomShayari = shayaris[Math.floor(Math.random() * shayaris.length)];
+
+            document.getElementById("message").innerText = randomMessage;
+            document.getElementById("shayari").innerText = randomShayari;
+
+            
+
+</body>
+</html>
